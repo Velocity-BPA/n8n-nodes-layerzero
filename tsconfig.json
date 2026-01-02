@@ -1,0 +1,37 @@
+{
+	"compilerOptions": {
+		"strict": false,
+		"strictNullChecks": false,
+		"noImplicitAny": false,
+		"module": "CommonJS",
+		"moduleResolution": "node",
+		"target": "ES2021",
+		"lib": ["ES2021"],
+		"declaration": true,
+		"declarationMap": true,
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		"resolveJsonModule": true,
+		"outDir": "./dist",
+		"rootDir": ".",
+		"baseUrl": ".",
+		"paths": {
+			"*": ["./node_modules/*"]
+		},
+		"types": ["node", "jest"]
+	},
+	"include": [
+		"credentials/**/*.ts",
+		"nodes/**/*.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"dist",
+		"test",
+		"**/*.test.ts",
+		"**/*.spec.ts"
+	]
+}
